@@ -20,7 +20,7 @@ function getHtmlPlugin(name) {
 //webpack配置
 var config = {
   entry: {
-    'common': ['./src/page/common/index.js'], //处理通用逻辑的模块
+    'common': ['./src/page/common/index.js'],  //处理通用逻辑的模块
     'index': ['./src/page/index/index.js'],
     'login': ['./src/page/login/index.js']
   },
