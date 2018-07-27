@@ -1,0 +1,20 @@
+.page-wrap{
+  padding: 30px 0;
+  margin: 20px auto;
+  background: #f5f3f3;
+  text-align: center;
+}
+.page-wrap .result-con{
+  display: none;
+}
+.page-wrap .result-con .result-title{
+  color: #555;
+}
+.page-wrap .result-con .result-content{
+  margin-top: 15px;
+}
+.page-wrap .result-con .result-content .link{
+  padding: 5px 10px;
+  border: 1px solid #f5b39a;
+  border-radius: 5px;
+}

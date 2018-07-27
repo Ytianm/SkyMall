@@ -6,13 +6,14 @@ var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 
-//动态生成html方法
-function getHtmlPlugin(name) {
+//动态生成html
+function getHtmlPlugin(name,title) {
   return {
     template: './src/view/' + name + '.html', //原始位置
     filename: 'view/' + name + '.html',       //目标位置
     inject: true,  //是否把模板中的的html引入的js也一起带进去
     hash: true,
+    title:title,
     chunks: ['common', name]  //需要引入的.js文件
   }
 }
@@ -22,7 +23,8 @@ var config = {
   entry: {
     'common': ['./src/page/common/index.js'],  //处理通用逻辑的模块
     'index': ['./src/page/index/index.js'],
-    'login': ['./src/page/login/index.js']
+    'login': ['./src/page/login/index.js'],
+    'result':['./src/page/result/index.js']
   },
 
   output: {
@@ -37,6 +39,11 @@ var config = {
 
   module: {
     rules: [
+      { 
+        test: /\.js$/, 
+        exclude: /node_modules/, 
+        loader: "babel-loader" 
+      },
       {
         test: /\.css$/,
         use: ExtractTextWebpackPlugin.extract({
@@ -45,7 +52,7 @@ var config = {
         })
       },
       {
-        test: /.(gif|jpg|jpeg|png|svg|woff|eot|ttf)$/,
+        test: /\.(gif|jpg|jpeg|png|svg|woff|eot|ttf)\??.*$/,
         use: [
           {
             loader: 'url-loader',  //注意：需要同时安装url-loader和file-loader
@@ -55,15 +62,22 @@ var config = {
             }
           }
         ]
+      },
+      {
+        test:/\.string$/,
+        use:'html-loader'
       }
     ]
   },
 
-  devServer: {
-    // hot: true, 
-    // port:8090,
-    // open:true
-    // contentBase: path.resolve(__dirname, 'dist'),
+  resolve: {
+    alias: {
+      node_modules:__dirname + '/node_modules',
+      util: __dirname + '/src/util',
+      page: __dirname + '/src/page',
+      service: __dirname + '/src/service',
+      image: __dirname + 'src/image'
+    }
   },
 
   plugins: [
@@ -79,8 +93,9 @@ var config = {
     }),
 
     // 生成动态html
-    new HtmlWebpackPlugin(getHtmlPlugin('index')),
-    new HtmlWebpackPlugin(getHtmlPlugin('login')),
+    new HtmlWebpackPlugin(getHtmlPlugin('index','首页')),
+    new HtmlWebpackPlugin(getHtmlPlugin('login','登录')),
+    new HtmlWebpackPlugin(getHtmlPlugin('result','操作结果'))
 
     //热更新
     // new webpack.HotModuleReplacementPlugin(),
@@ -92,12 +107,8 @@ var config = {
 };
 
 //只有开发环境才追加(暂不知道有何用)
-if( 'dev'=== WEBPACK_ENV){
+if ('dev' === WEBPACK_ENV) {
   config.entry.common.push('webpack-dev-server/client?http://localhost:8080/');
-}
-
-if( 'online'=== WEBPACK_ENV){
-  config.plugins.push("new CleanWebpackPlugin(['dist'])");
 }
 
 module.exports = config;

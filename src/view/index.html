@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<%= require('html-loader!./layout/html-head.html')%>
+
+<head>
+  <%= require('html-loader!./layout/head-common.html')%>
+</head>
+<title>SkyMall</title>
 
 <body>
-  <button id="btn">按钮</button>
+  <%= require('html-loader!./layout/nav.html')%>  <!--头部导航-->
+  <%= require('html-loader!./layout/header.html')%>
+  <div class="page-wrap w">
+      <%= require('html-loader!./layout/nav-side.html')%>
+    <div class="content width-nav">content</div>
+  </div>
+  <%= require('html-loader!./layout/footer.html')%>
 </body>
-<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<script>
-  </script>
+
 </html>

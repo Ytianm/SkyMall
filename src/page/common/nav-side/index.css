@@ -1,0 +1,20 @@
+/* 导航主体 */
+.nav-side{
+  float: left;
+  width: 130px;
+  min-height: 100px;  /*在nav-side渲染出来之前撑开容器高度，以免右边元素跳到nav-side的位置*/
+}
+.nav-side .nav-item{
+  line-height: 25px;
+}
+.nav-side .nav-item .active{
+  width: 130px;
+  display: inline-block;
+  background: #f8e7dd;
+  color: #F54000;
+}
+/* 右侧内容区 */
+.content.width-nav{
+  float: left;
+  width: 950px;
+}
