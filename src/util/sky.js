@@ -15,19 +15,22 @@ var _sky = {
       data: param.data || '',
       success(res) {
         //请求成功
+        console.log(res)
         if (res.status === 0) {
           typeof param.success === 'function' && param.success(res.data, res.msg);
         }
-        //没有登录
+        //没有登录数据
         else if (res.status === 10) {
           _this.doLogin()
         }
         //请求数据错误
         else if (res.status === 1) {
+          console.log('请求数据错误');
           typeof param.error === 'function' && param.error(res.msg);
         }
       },
       error(res) {
+        console.log('请求失败');
         typeof param.error === 'function' && param.error(res.statusText);
       }
     })
@@ -58,7 +61,7 @@ var _sky = {
   },
 
   //失败提示
-  error(msg) {
+  errorTips(msg) {
     alert(msg || '哪里出问题了~.~');
   },
 
@@ -82,7 +85,7 @@ var _sky = {
   //登录
   doLogin() {
     //跳转到登录页
-    window.location.href = './login.html/redirect=' + encodeURICoponent(window.location.href);
+    window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
   },
 
   //回到首页

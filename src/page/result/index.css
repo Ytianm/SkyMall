@@ -1,11 +1,16 @@
 .page-wrap{
-  padding: 30px 0;
+  padding: 50px 0;
   margin: 20px auto;
-  background: #f5f3f3;
+  background: #f76000;
   text-align: center;
 }
 .page-wrap .result-con{
   display: none;
+  background: #f5f5f5;
+  width: 500px;
+  padding: 40px;
+  margin: 0 auto
+  
 }
 .page-wrap .result-con .result-title{
   color: #555;
@@ -14,7 +19,13 @@
   margin-top: 15px;
 }
 .page-wrap .result-con .result-content .link{
+  display: inline-block;
   padding: 5px 10px;
-  border: 1px solid #f5b39a;
+  border: 1px solid #bbb;
   border-radius: 5px;
+  height: 14px;
+  line-height: 14px
+}
+.page-wrap .result-con .result-content .link:hover{
+  border: 1px solid #f54000;
 }

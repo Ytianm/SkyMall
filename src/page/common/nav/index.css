@@ -1,5 +1,5 @@
 .nav{
-  background: #f5f5f5;
+  background: #f1f1f1;
   height: 35px;
   line-height: 35px;
   border-bottom: 1px solid #f9f9f9;
@@ -11,6 +11,9 @@
 }
 .nav .user .link{
   margin-right: 5px;
+}
+.nav .user .js-logout{
+  margin-left: 5px;
 }
 .nav .user.login{
   display: none;

@@ -5,7 +5,7 @@
   padding: 0;
 }
 body{
-  background: #fff;
+  background: #f8f8f8;
   font: 13px/1.5 tahoma,arial,Microsoft YaHei,sans-serif;
   letter-spacing: 1px;
 }
@@ -47,7 +47,7 @@ input[name=checkbox]{
   text-decoration: none;
 }
 .link:hover{
-  color: #d37c19;
+  color: #f54000;
 }
 .link-text{
   color: #999;
@@ -62,7 +62,7 @@ input[name=checkbox]{
   line-height: 40px;
   vertical-align: middle;
   border: none;
-  background: #d37c19;
+  background: #f54000;
   font-size: 17px;
   font-weight: bold;
   color: #fff;
@@ -84,4 +84,22 @@ input[name=checkbox]{
   height: 31px;
   display: block;
   background: url(../../image/icon/loading1.gif) no-repeat;
+}
+
+/* pannel */
+.panel{
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.panel .panel-title{
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+  padding: 10px;
+  overflow: hidden;
 }

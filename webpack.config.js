@@ -24,6 +24,11 @@ var config = {
     'common': ['./src/page/common/index.js'],  //处理通用逻辑的模块
     'index': ['./src/page/index/index.js'],
     'login': ['./src/page/login/index.js'],
+    'register':['./src/page/register/index.js'],
+    'pass-reset':['./src/page/pass-reset/index.js'],
+    'user-center':['./src/page/user-center/index.js'],
+    'user-center-update':['./src/page/user-center-update/index.js'],
+    'pass-update':['./src/page/pass-update/index.js'],
     'result':['./src/page/result/index.js']
   },
 
@@ -74,6 +79,7 @@ var config = {
     alias: {
       node_modules:__dirname + '/node_modules',
       util: __dirname + '/src/util',
+      service:__dirname+'/src/service',
       page: __dirname + '/src/page',
       service: __dirname + '/src/service',
       image: __dirname + 'src/image'
@@ -94,8 +100,13 @@ var config = {
 
     // 生成动态html
     new HtmlWebpackPlugin(getHtmlPlugin('index','首页')),
-    new HtmlWebpackPlugin(getHtmlPlugin('login','登录')),
-    new HtmlWebpackPlugin(getHtmlPlugin('result','操作结果'))
+    new HtmlWebpackPlugin(getHtmlPlugin('login','用户登录')),
+    new HtmlWebpackPlugin(getHtmlPlugin('register','用户注册')),
+    new HtmlWebpackPlugin(getHtmlPlugin('pass-reset','找回密码')),
+    new HtmlWebpackPlugin(getHtmlPlugin('result','操作结果')),
+    new HtmlWebpackPlugin(getHtmlPlugin('user-center','个人中心')),
+    new HtmlWebpackPlugin(getHtmlPlugin('user-center-update','修改个人信息')),
+    new HtmlWebpackPlugin(getHtmlPlugin('pass-update','修改密码'))
 
     //热更新
     // new webpack.HotModuleReplacementPlugin(),

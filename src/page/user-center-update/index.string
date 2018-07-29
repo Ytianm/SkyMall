@@ -1,0 +1,25 @@
+  <div class="user-info">
+    <div class="form-line">
+      <span class="label">用户名：</span>
+      <span class="text">{{username}}</span>
+    </div>
+    <div class="form-line">
+      <span class="label">电 话：</span>
+      <input type="text" class="edit-input" id="phone" value="{{phone}}" autocomplete="off">
+    </div>
+    <div class="form-line">
+      <span class="label">邮箱：</span>
+      <input type="text" class="edit-input" id="email" value="{{email}}" autocomplete="off">
+    </div>
+    <div class="form-line">
+      <span class="label">密码问题：</span>
+      <input type="text" class="edit-input" id="question" value="{{question}}" autocomplete="off">
+    </div>
+    <div class="form-line">
+      <span class="label">密码答案：</span>
+      <input type="text" class="edit-input" id="answer" value="{{answer}}" autocomplete="off">
+    </div>
+    <div>
+      <span class="btn btn-save">保存</span>
+    </div>
+  </div>
