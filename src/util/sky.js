@@ -15,7 +15,7 @@ var _sky = {
       data: param.data || '',
       success(res) {
         //请求成功
-        console.log(res)
+        // console.log(res)
         if (res.status === 0) {
           typeof param.success === 'function' && param.success(res.data, res.msg);
         }

@@ -23,6 +23,8 @@ var config = {
   entry: {
     'common': ['./src/page/common/index.js'],  //处理通用逻辑的模块
     'index': ['./src/page/index/index.js'],
+    'list':['./src/page/list/index.js'],
+    'detail':['./src/page/detail/index.js'],
     'login': ['./src/page/login/index.js'],
     'register':['./src/page/register/index.js'],
     'pass-reset':['./src/page/pass-reset/index.js'],
@@ -100,6 +102,8 @@ var config = {
 
     // 生成动态html
     new HtmlWebpackPlugin(getHtmlPlugin('index','首页')),
+    new HtmlWebpackPlugin(getHtmlPlugin('list','商品列表')),
+    new HtmlWebpackPlugin(getHtmlPlugin('detail','商品详情')),
     new HtmlWebpackPlugin(getHtmlPlugin('login','用户登录')),
     new HtmlWebpackPlugin(getHtmlPlugin('register','用户注册')),
     new HtmlWebpackPlugin(getHtmlPlugin('pass-reset','找回密码')),

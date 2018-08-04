@@ -1,5 +1,6 @@
 .footer{
-  padding-bottom: 10px;
+  padding: 25px 0;
+  border-top: 2px solid #ddd;
 }
 .footer .links{
   text-align: center;

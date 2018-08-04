@@ -1,0 +1,76 @@
+ul.bjqs {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: none;
+}
+
+li.bjqs-slide {
+  position: absolute;
+  display: none;
+}
+
+ul.bjqs-controls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+ul.bjqs-controls.v-centered li{
+  width: 30px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #999;
+  background: rgba(0, 0, 0, .2);
+  position: absolute
+}
+ul.bjqs-controls.v-centered li:hover{
+  background: #444;
+  background: rgba(0, 0, 0, .5);
+}
+ul.bjqs-controls.v-centered li a {
+  font-size: 30px;
+  color: #fff;
+}
+
+ul.bjqs-controls.v-centered li.bjqs-next{
+  top: 153px;
+  right: 0;
+}
+
+ul.bjqs-controls.v-centered li.bjqs-prev{
+  top: 153px;
+  left: 0;
+}
+
+ol.bjqs-markers {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  bottom: 10px;
+  /* width: 118px; */
+}
+
+ol.bjqs-markers.h-centered {
+  text-align: center;
+}
+
+ol.bjqs-markers li {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #fff;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+ol.bjqs-markers li a {
+  opacity: 0;
+}
+ol.bjqs-markers .active-marker{
+  background: #f54000
+}
+

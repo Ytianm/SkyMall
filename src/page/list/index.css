@@ -1,0 +1,94 @@
+/* 排序 */
+.sort-con{
+  margin-top: 5px;
+  overflow: hidden;
+}
+.sort-con .sort-item{
+  position: relative;
+  float: left;
+  padding: 0 8px;
+  height: 24px;
+  line-height: 24px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  margin-right: -1px;
+  cursor: pointer;
+}
+.sort-con .sort-item.active{
+  background: #f54000;
+  color: #fff;
+  border: 1px solid #f54000;
+}
+.sort-con .sort-item .fa-sort-desc{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+/* 降序 */
+.sort-con .sort-item.desc .fa-sort-asc{
+  opacity: .6;
+}
+/* 升序 */
+.sort-con .sort-item.asc .fa-sort-desc{
+  opacity: .6;
+}
+/* 列表 */
+.p-list-con{
+  margin:5px -15px 5px 0; 
+  overflow: hidden; /* 清除floor-item的左浮动 */
+}
+.p-list-con .p-item{
+  position: relative;
+  width: 202px;
+  float: left;;
+  background: #fff;
+  margin:5px 15px 10px 0;
+  border: 1px solid #e5e5e5;
+}
+.p-list-con .p-item:hover{
+  border: 1px solid #f54000;
+}
+.p-list-con .p-item .p-img-con{
+  margin: 10px auto 0px;
+  width: 180px;
+  height: 200px;
+}
+.p-list-con .p-item .p-img-con img{
+  width: 100%;
+  height: 100%;
+}
+.p-list-con .p-item .p-price-con{
+  margin-top: 5px;
+  height: 30px;
+  line-height: 30px;
+}
+.p-list-con .p-item .p-price-con .p-price{
+  color: #f54000;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.p-list-con .p-item .p-name-con{
+  padding: 0 5px 10px 10px;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+}
+.p-list-con .p-item .p-name-con .p-name{
+  line-height: 20px;
+  color: #666;
+}
+.err-tips{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  height: 80px;
+  line-height: 80px;
+  color: #555;
+  background: #eee;
+}
+.err-tips .err-keyword{
+  color: #f54000;
+}

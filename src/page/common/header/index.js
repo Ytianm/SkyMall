@@ -3,13 +3,14 @@ var sky = require('util/sky.js');
 
 var header = {
   init() {
+    this.onload();
     this.bindEvent();
   },
   onload() {
     var keyword = sky.getUrlParam('keyword');
     //初始化输入框
     if (keyword) {
-      $('search-input').val(keyword);
+      $('.search-input').val(keyword);
     }
   },
   bindEvent() {
