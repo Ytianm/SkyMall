@@ -1,0 +1,121 @@
+.cart-table{
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+}
+.cart-header{
+  background: #eee;
+}
+.cart-list{
+  background: #fff;
+}
+.cart-header .cell-info{
+  width: 45%;
+}
+.cart-table .cart-cell{
+  height: 40px;
+  line-height: 40px;
+}
+.cart-table .cell-check{
+  text-align: left;
+  padding-left:20px;
+  width: 10%;
+}
+.cart-list .cell-check{
+  width: 6%;
+}
+.cart-table .cell-img{
+  text-align: left;
+  width: 10%;
+}
+.cart-table .cell-img .p-img{
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+.cart-table .cell-info{
+  text-align: left;
+  width: 35%;
+}
+.cart-header .cell-info{
+  width: 41%;
+}
+.cart-table .cell-price{
+  text-align: center;
+  width: 10%;
+}
+.cart-table .cell-count{
+  text-align: center;
+  width: 15%;
+}
+.cart-table .cell-count .count-input{
+  width: 50px;
+  height: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.cart-table .cell-count .count-btn{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+.cart-table .cell-total{
+  text-align: center;
+  width: 10%;
+}
+.cart-list .cell-total{
+  font-weight: bold;
+}
+.cart-table .cell-opera{
+  text-align: center;
+  width: 10%;
+}
+.cart-list .cell-opera .cart-delete:hover{
+  cursor: pointer;
+  color: #f54000;
+}
+
+/* cart-footer */
+.cart-footer{
+  line-height: 50px;
+  overflow: hidden;
+  background: #eee;
+  margin-bottom: 20px;
+}
+.cart-footer .select-con{
+  float: left;
+  width: 5%;
+  padding-left: 25px;
+}
+.cart-footer .delete-con{
+  float: left;
+  margin-left: 5px;
+}
+.cart-footer .submit-con{
+  height: 50px;
+  line-height: 50px;
+  float: right;
+}
+.cart-footer .submit-btn{
+  height: 50px;
+  line-height: 50px;
+  margin-left: 30px;
+  vertical-align: top;
+}
+.cart-footer .submit-price{
+  font-size: 18px;
+  font-weight: bold;
+  color: #f54000;
+}

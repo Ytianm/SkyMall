@@ -166,13 +166,3 @@
   display: block;
   margin: 0 auto;
 }
-
-/* 错误提示 */
-.err-tips {
-  text-align: center;
-  font-size: 16px;
-  color: #555;
-  height: 80px;
-  line-height: 80px;
-  background: #ccc;
-}

@@ -103,3 +103,28 @@ input[name=checkbox]{
   padding: 10px;
   overflow: hidden;
 }
+
+/* 错误提示 */
+.err-tips {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  height: 100px;
+  line-height: 100px;
+  background: #eee;
+  margin-bottom: 20px;
+}
+.err-tips .link{
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  padding: 5px;
+}
+.err-tips .link:hover{
+  color: #f54000;
+  border: 1px solid #f54000;
+}

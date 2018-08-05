@@ -8,7 +8,7 @@ var nav = {
     this.bindEvent();
     this.loadUserInfo();
     this.loadCartCount();
-    return this;
+    return this;  //这个模块初始化后返回该对象本身
   },
   bindEvent() {
     //点击注册
@@ -33,7 +33,7 @@ var nav = {
     _user.checkLogin(function (res) {
       $('.user.not-login').hide().siblings('.user.login').show().find('.username').text(res.username);
     }, function (errMsg) {
-      console.log(errMsg)
+      // console.log(errMsg)
     })
   },
   //加载购物车信息
