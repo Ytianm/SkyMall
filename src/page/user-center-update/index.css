@@ -1,0 +1,38 @@
+/* 面包屑导航 */
+.crumb{
+  height: 45px;
+  line-height: 45px;
+  background: #eee;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+/* panel */
+.form-line{
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.form-line .label{
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+}
+.user-info{
+  width: 300px;
+  margin: 30px auto;
+}
+.btn-save{
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-left: 130px;
+}
+.edit-input{
+  height: 25px;
+  line-height: 25px;
+  width: 200px;
+  font-size: 14px;
+  padding-left:3px 
+}

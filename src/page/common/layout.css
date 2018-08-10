@@ -1,0 +1,130 @@
+
+/*reset*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #f8f8f8;
+  font: 13px/1.5 tahoma,arial,Microsoft YaHei,sans-serif;
+  letter-spacing: 1px;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  display: block;
+  border: none;
+}
+label{
+  cursor: pointer;
+}
+input[name=checkbox]{
+  cursor: pointer;
+}
+
+/*定宽布局*/
+.w{
+  width: 1080px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/*通用样式*/
+/*隐藏*/
+.hide{
+  display: none;
+}
+
+/*超链接*/
+.link{
+  color: #999;
+  cursor: pointer;
+  text-decoration: none;
+}
+.link:hover{
+  color: #f54000;
+}
+.link-text{
+  color: #999;
+  text-decoration: none;
+}
+
+/*button*/
+.btn{
+  display: inline-block;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  border: none;
+  background: #f54000;
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-mini{
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+/*loading*/
+.loading{
+  margin: 10px auto;
+  width: 31px;
+  height: 31px;
+  display: block;
+  background: url(../../image/icon/loading1.gif) no-repeat;
+}
+
+/* pannel */
+.panel{
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.panel .panel-title{
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  border-bottom: 1px solid #ddd;
+}
+.panel .panel-body{
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* 错误提示 */
+.err-tips {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  height: 150px;
+  line-height: 150px;
+  background: #eee;
+  margin: 10px auto 50px;
+}
+.err-tips .link{
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  padding: 5px;
+}
+.err-tips .link:hover{
+  color: #f54000;
+  border: 1px solid #f54000;
+}

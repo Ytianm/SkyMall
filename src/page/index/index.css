@@ -1,0 +1,87 @@
+
+.wraper{
+  background: #f4f4f4;
+}
+/* keywword */
+.keyword-list{
+  float: left;
+  background: #fff;
+  height: 350px;
+  padding: 8px 0;
+  border:1px solid #f54000;
+  border-top: none;
+}
+.keyword-list .keyword-item{
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 20px;
+}
+.keyword-list .keyword-item:hover{
+  background: #ffe4dd;
+}
+.keyword-list .keyword-item .link{
+  color: #777;
+  font-size: 14px;
+}
+.keyword-list .keyword-item .link:hover{
+  color: #f54000;
+}
+/* banner */
+.banner-con{
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 888px;
+  height: 357px;
+  background: #e8e8e8;
+}
+.banner-con .loading{
+  margin-top: 165px;
+}
+.banner-con .banner-img{
+  width: 100%;
+  height: 100%;
+}
+/* floor */
+.floor-wrap{
+  margin-right: -15px;/* 隐藏第floor-list溢出的右边区域 */
+}
+.floor-wrap .floor-title{
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px solid #f54000;
+  font-weight: normal;
+  font-size: 20px;
+  color: #555;
+  padding-left: 5px;
+  background: #e7e7e7;
+  margin-top: 10px;
+}
+.floor-wrap .floor-list{
+  margin:5px 0; 
+  overflow: hidden; /* 清除floor-item的左浮动 */
+}
+.floor-wrap .floor-item{
+  position: relative;
+  width: 202px;
+  height: 228px;
+  float: left;;
+  background: #fff;
+  margin:5px 15px 5px 0;
+  border: 1px solid #e5e5e5;
+}
+.floor-wrap .floor-item:hover{
+  border: 1px solid #f54000;
+}
+.floor-wrap .floor-item .floor-img{
+  margin: 10px auto 0px;
+  width: 80%;
+  height: 75%;
+}
+.floor-wrap .floor-item .floor-text{
+  position: absolute;
+  padding: 10px;
+  color: #666;
+  bottom: 0;
+}

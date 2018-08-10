@@ -1,0 +1,19 @@
+<div id="banner-slide">
+  <ul class="bjqs">
+    <li>
+      <a href="./list.html?categoryId=1000021" target="_blank">
+        <img class="banner-img" src="../../image/banner/banner1.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="./list.html?categoryId=1000021" target="_blank">
+        <img class="banner-img" src="../../image/banner/banner2.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="./list.html?categoryId=1000021" target="_blank">
+        <img class="banner-img" src="../../image/banner/banner3.jpg">
+      </a>
+    </li>
+  </ul>
+</div>

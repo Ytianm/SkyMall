@@ -1,0 +1,89 @@
+.page-wrap{
+  margin-top: 20px;
+  background: #e5e5e5;
+}
+.user-login{
+  width: 400px;
+  background:#f5f5f5;
+  text-align: center;
+  margin: 30px auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.user-login .login-title{
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+.user-login .login-con{
+  position: relative;
+  text-align: center;
+  padding: 12px 25px 25px;
+}
+/*错误提示*/
+.user-login .error-item{
+  position: absolute;
+  top: 1px;
+  left: 25px;
+  border: 1px solid #ffb4a8;
+  width: 328px;
+  line-height: 16px;
+  padding: 6px 10px;
+  background: #fef2f2;
+  display: none;
+}
+.user-login .error-item .error-icon{
+  float: left;
+  padding-right: 10px;
+  font-size: 16px;
+  color: red;
+}
+.user-login .error-item .err-msg{
+  float: left;
+  text-align: left;
+  font-size: 12px;
+  line-height: 15px;
+  word-wrap: break-word;
+  width: 240px
+}
+.user-login .login-item{
+  position: relative;
+  width:350px;
+  margin-top: 20px;
+}
+.user-login .login-item .user-pass-label i{
+  display: inline-block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  font-size: 25px;
+  background: #ddd;
+  color: #fff;
+}
+.user-login .login-item .user-pass-label input{
+  box-sizing: border-box;
+  width: 350px;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 5px 0 45px;
+  margin: 0 auto;
+  border:1px solid #ddd;
+  background: #fff;
+}
+.user-login .btn-submit{
+  margin-top: 20px;
+  width: 310px;
+  border-radius: 3px;
+}
+.user-login .link-item{
+  margin-top: 20px;
+  text-align: right;
+  margin-right: 5px;
+}
+.user-login .link-item .link{
+  margin-left: 8px;
+}

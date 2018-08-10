@@ -1,0 +1,30 @@
+.page-wrap{
+  padding: 50px 0;
+  margin: 20px auto;
+  background: #eee;
+  text-align: center;
+}
+.page-wrap .result-con{
+  display: none;
+  background: #fff;
+  width: 500px;
+  padding: 40px;
+  margin: 0 auto
+}
+.page-wrap .result-con .result-title{
+  color: #555;
+}
+.page-wrap .result-con .result-content{
+  margin-top: 15px;
+}
+.page-wrap .result-con .result-content .link{
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  height: 14px;
+  line-height: 14px
+}
+.page-wrap .result-con .result-content .link:hover{
+  border: 1px solid #f54000;
+}
