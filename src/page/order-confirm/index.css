@@ -1,0 +1,186 @@
+.address-item,
+.address-add{
+  width: 200px;
+  float: left;
+  border: 3px dashed #ccc;
+  margin: 10px 10px 0 0;
+  padding: 5px 10px;
+  color: #666;
+}
+.address-item.active{
+  border: 3px dashed #f54000;
+}
+.address-item:hover,
+.address-add:hover{
+  background: #f4f4f4;
+  cursor: pointer;
+}
+.address-item:hover .address-opera{
+  visibility: visible;
+}
+.address-item .address-title{
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+.address-item .address-detail{
+  margin-top: 5px;
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.address-item .address-opera{
+  text-align: right;
+  visibility: hidden; /* 容器高度不隐藏 */
+}
+.address-item .address-opera.link{
+  margin-right: 5px;
+}
+.address-add .address-new{
+  padding: 14px 0;
+  text-align: center;
+}
+.address-add .address-new .fa{
+  font-size: 50px;
+  color: #ccc;
+}
+.address-add .address-new .text{
+  font-size: 12px;
+}
+
+/* 商品清单 */
+.product-table{
+  width: 100%;
+  margin: 10px 0;
+  border-collapse: collapse;
+  border-bottom: 1px solid #eee;
+}
+.product-table th{
+  height: 30px;
+  line-height: 30px;
+}
+.product-table th,
+.product-table td{
+  border-bottom: 1px solid #eee;
+}
+.product-table .cell-img{
+  width: 10%;
+  text-align: center;
+}
+.product-table .cell-img .p-img{
+  width: 80px;
+  height: 80px;
+  border: 1px solid #eee;
+  margin: 10px 0;
+}
+.product-table .cell-info{
+  width: 30%;
+  text-align: left;
+
+}
+.product-table .cell-price{
+  width: 20%;
+  text-align: center;
+}
+.product-table .cell-count{
+  width: 20%;
+  text-align: center;
+}
+.product-table .cell-total{
+  width: 20%;
+  text-align: center;
+}
+.submit-con{
+  height: 50px;
+  line-height: 50px;
+  background: #eee;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.submit-con .order-submit{
+  height: 50px;
+  line-height: 50px;
+  vertical-align: top;
+  margin-left: 15px;
+}
+.submit-con .submit-total{
+  font-size: 18px;
+  font-weight: bold;
+  color: #f54000;
+  vertical-align: middle;
+}
+
+/* 新建地址modal */
+.modal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e5e5e5;
+  background: rgba(0, 0, 0, .4);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal .modal-container{
+  width: 700px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 3px;
+}
+.modal .modal-container .modal-header{
+  position: relative;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.modal .modal-container .modal-header .modal-title{
+  font-size: 14px;
+}
+.modal .modal-container .modal-header .close{
+  position: absolute;
+  padding: 10px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.modal .modal-container .modal-header .close:hover{
+  background: #f54000;
+  color: #fff;
+}
+.modal .modal-container .modal-body{
+  padding: 15px;
+
+}
+
+/* form */
+.form .form-line{
+  margin: 5px 0;
+  overflow: hidden;
+}
+.form .form-line .label{
+  display: block;
+  float: left;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+.form .form-line .form-item{
+  padding: 0 5px;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 10px;
+}
+.form .form-line .required{
+  color: red;
+  vertical-align: middle;
+}
+.form .form-line .address-btn{
+  height: 40px;
+  line-height: 40px;
+  width: 120px;
+  text-align: center;
+  margin: 10px 0 0 80px;
+}

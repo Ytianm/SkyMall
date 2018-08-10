@@ -52,7 +52,7 @@ Pagination.prototype.getPaginationHtml = function () {
     disabled: !option.hasPreviousPage
   });
   //页码数字
-  for (var pageNum = start; pageNum < end; pageNum++) {
+  for (var pageNum = start; pageNum <= end; pageNum++) {
     pageArray.push({
       name: pageNum,
       value: pageNum, //页码，用于点击时获取

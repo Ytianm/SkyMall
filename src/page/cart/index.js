@@ -142,7 +142,7 @@ var page = {
     $(document).on('click', '.submit-btn', function () {
       //购车总价>0时才跳转
       if(_this.data.cartInfo.cartTotalPrice > 0){
-        window.location.href = './confirm.html';
+        window.location.href = './order-confirm.html';
       }else{
         _sky.errorTips('您还没选择任何商品哦');
       }

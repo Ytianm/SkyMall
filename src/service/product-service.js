@@ -6,24 +6,23 @@ var _product = {
     _sky.request({
       url: _sky.getServerUrl('/product/list.do'),
       data: listParam,
-      method:'post',
+      method: 'post',
       success: resolve,
       error: reject
     })
   },
-    //获取商品详情
-    getProductDetail(productId, resolve, reject) {
-      _sky.request({
-        url: _sky.getServerUrl('/product/detail.do'),
-        data: {
-          productId:productId
-        },
-        method:'post',
-        success: resolve,
-        error: reject
-      })
-    }
-
+  //获取商品详情
+  getProductDetail(productId, resolve, reject) {
+    _sky.request({
+      url: _sky.getServerUrl('/product/detail.do'),
+      data: {
+        productId: productId
+      },
+      method: 'post',
+      success: resolve,
+      error: reject
+    })
+  }
 }
 
 module.exports = _product;

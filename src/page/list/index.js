@@ -13,7 +13,7 @@ var page = {
       categoryId: _sky.getUrlParam('categoryId') || '',
       orderBy: _sky.getUrlParam('orderBy') || 'default',
       pageNum: _sky.getUrlParam('pageNum') || 1,
-      pageSize: _sky.getUrlParam('pageSize') || 10
+      pageSize: _sky.getUrlParam('pageSize') || 5
     }
   },
   init() {
@@ -21,7 +21,6 @@ var page = {
     this.bindEvent();
   },
   onload() {
-
     this.loadList();
   },
   bindEvent() {
@@ -65,7 +64,7 @@ var page = {
     var listParam = this.data.listParam;
     var $pListCon = $('.p-list-con');
     //加载前显示loading...
-    $pListCon.html('<div class="loading"></div>');
+    // $pListCon.html('<div class="loading"></div>');
     // 删除参数中不必要的字段
     listParam.categoryId ? (delete listParam.keyword) : (delete listParam.categoryId);
     //请求接口，加载数据
@@ -75,7 +74,7 @@ var page = {
         keyword: _this.data.listParam.keyword
       })
       $('.p-list-con').html(htmlList);
-      //分页
+      //加载分页
       _this.loadPagination({
         pageNum:res.pageNum,
         pages:res.pages,
@@ -86,7 +85,7 @@ var page = {
         isFirstPage: res.isFirstPage,
         isLastPage: res.isLastPage,
         hasPreviousPage: res.hasPreviousPage,
-        hasNextPage: res.hasNextPage,
+        hasNextPage: res.hasNextPage
       });
     }, function (errMsg) {
       _sky.errorTips(errMsg);

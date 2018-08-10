@@ -57,7 +57,7 @@ var _sky = {
 
   //成功提示
   successTips(msg) {
-    alert(msg || '操作成功');
+    alert(msg || '操作成功3');
   },
 
   //失败提示
