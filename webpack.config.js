@@ -15,7 +15,7 @@ function getHtmlPlugin(name, title) {
     hash: true,
     title: title,
     chunks: ['common', name],  //需要引入的.js文件
-    favicon: './favicon.ico.png'
+    favicon: './favicon.ico'
   }
 }
 
