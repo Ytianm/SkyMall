@@ -17,7 +17,7 @@
             <span class="order-num">{{orderNo}}</span>
           </a>
         </span>
-        <span class="order-text">2018-8-8</span>
+        <span class="order-text">{{createTime}}</span>
         <span class="order-text">收件人：{{receiverName}}</span>
         <span class="order-text">订单状态：{{statusDesc}}</span>
         <span class="order-text">

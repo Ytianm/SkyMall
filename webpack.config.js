@@ -45,8 +45,8 @@ var config = {
     filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist'),
     //http查找目录  确保publicPath总是以斜杠(/)开头和结尾。
-    publicPath: '//s.yetianmao.tech/SkyMall/dist/'
-    // publicPath:'/dist/' 
+    // publicPath: '//s.yetianmao.tech/SkyMall/dist/'
+    publicPath:'/dist/' 
   },
 
   externals: {
