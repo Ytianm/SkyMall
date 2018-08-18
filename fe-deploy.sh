@@ -44,7 +44,7 @@ git pull
 
 #npm i  安装依赖
 echo -e "===========npm install=========="
-npm install --registry=https://registry.npm.taobao.org
+cnpm i
 
 #npm run dist 打包
 echo -e "==========npm run dist========="
@@ -55,7 +55,7 @@ if [ -d "./dist" ];
   then
   echo -e "==========dest backup========="
   #备份product里原有的dist
-  mv $DEST_PATH$1/dist $DEST_PATH/dist.bak
+  mv $DEST_PATH$1/dist $DEST_PATH$1/dist.bak
 
   #copy 
   echo -e "=============copy============="

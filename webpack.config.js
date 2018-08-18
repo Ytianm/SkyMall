@@ -9,9 +9,9 @@ var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 //动态生成html
 function getHtmlPlugin(name, title) {
   return {
-    template: './src/view/' + name + '.html', //原始位置
+    template: './src/view/' + name + '.html', //入口模板
     filename: 'view/' + name + '.html',       //目标位置
-    inject: true,  //是否把模板中的的html引入的js也一起带进去
+    inject: true,  //是否把模板html引入的js也一起引入
     hash: true,
     title: title,
     chunks: ['common', name],  //需要引入的.js文件
@@ -45,7 +45,7 @@ var config = {
     filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist'),
     //http查找目录  确保publicPath总是以斜杠(/)开头和结尾。
-    publicPath: '//s.happymmall.com/mmall-fe/dist/'
+    publicPath: '//s.yetianmao.tech/SkyMall/dist/'
     // publicPath:'/dist/' 
   },
 
